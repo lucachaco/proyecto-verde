@@ -12,16 +12,8 @@ body {
 .mobile_buttons {
     float: right;
     background: yellow;
-/*    float:right;
-    font-size:16px;
-    color: #FFF;
-    font-weight: bold;
-    text-shadow: 0 1px 3px #000;*/
-
-
     display: none;
 }
-
 @media screen and (max-width: 40em) {
     .js #menu {
         display: none;
