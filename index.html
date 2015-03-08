@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
 
-        <link rel="stylesheet" href="/assets/css/vendor/flexslider.css">
+    <link rel="stylesheet" href="/assets/css/vendor/flexslider.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
     <link rel="stylesheet" href="/assets/css/vendor/slicknav.css">
@@ -15,9 +15,14 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
+<div id="header" style="background-color:red;">
+    <img src="/assets/images/logo.jpg" alt="Logo">
+</div>
 
-<img src="/assets/images/logo.jpg" alt="Logo">
 
+<div id="header2" style="background-color:green;">
+    verde
+</div>
 <ul id="menu">
     <li>Parent 1
         <ul>
@@ -79,7 +84,6 @@
      });*/
 
 
-
     $(document).ready(function () {
 
         $('.flexslider').flexslider({
@@ -88,7 +92,10 @@
         });
 
 
-        $('#menu').slicknav();
+        $('#menu').slicknav({
+            label: '',
+            prependTo: '#header2'
+        });
     });
 
 </script>
