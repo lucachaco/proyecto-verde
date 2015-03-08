@@ -103,7 +103,7 @@ section {
     color: #fff;
     text-decoration: none;
     width: 100%;
-    background: #f4421a;
+    background: #007c1e;
     border-bottom: 1px solid white;
     padding: 0.7em 1em;
     float: left;
@@ -121,7 +121,7 @@ section {
 }
 
 .nav-collapse ul ul a {
-    background: #ca3716;
+    background: #007c1e;
     padding-left: 2em;
 }
 
@@ -168,7 +168,7 @@ section {
 }
 
 .nav-toggle:before {
-    color: #f4421a; /* Edit this to change the icon color */
+    color: #007c1e; /* Edit this to change the icon color */
     font-family: "responsivenav", sans-serif;
     font-style: normal;
     font-weight: normal;
