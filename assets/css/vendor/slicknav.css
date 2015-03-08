@@ -40,7 +40,7 @@
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;  
-    background-color: #222222;
+    background-color: #01771e;
 }
 /* Button Text */
 .mobile_buttons .slicknav_btn .slicknav_menutxt {
@@ -53,7 +53,7 @@
   background-color: #f5f5f5;
 }
 .slicknav_menu {
-    background:#4c4c4c;
+    background:#01771e;
 }
 .slicknav_nav {
     color:#fff;
