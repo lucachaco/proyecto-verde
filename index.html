@@ -18,13 +18,10 @@
 <div id="header" style="background-color:red;">
     <img src="/assets/images/logo.jpg" alt="Logo">
     <div class="mobile_buttons">
-        mobile buttons
     </div>
 </div>
 
-
-<div id="header2" style="background-color:green;">
-    verde
+<div class="mobile-navigation-container" style="background-color:green;">
 </div>
 <ul id="menu">
     <li>Parent 1
@@ -97,7 +94,7 @@
 
         $('#menu').slicknav({
             label: '',
-            prependTo: '#header2'
+            prependTo: '.mobile-navigation-container'
 
         });
     });
