@@ -1,20 +1,38 @@
 body {
-    font-family:Helvetica, Arial, sans-serif;
-    margin:0;
-    padding:0;
-    font-size:100%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
 }
 
 .slicknav_menu {
-    display:none;
+    display: none;
+}
+
+.mobile_buttons {
+    float: right;
+    background: yellow;
+/*    float:right;
+    font-size:16px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 0 1px 3px #000;*/
+
+
+    display: none;
 }
 
 @media screen and (max-width: 40em) {
     .js #menu {
-        display:none;
+        display: none;
     }
 
     .js .slicknav_menu {
-        display:block;
+        display: block;
+    }
+
+
+    .mobile_buttons {
+        display: block;
     }
 }
