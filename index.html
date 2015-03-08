@@ -5,39 +5,92 @@
     <title>Fundación Neotrópica - Creciendo como la naturaleza</title>
     <link rel="icon" type="image/ico" href="/assets/images/favicon.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/vendor/responsive-nav.css">
+
+
+        <link rel="stylesheet" href="/assets/css/vendor/flexslider.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/vendor/responsive-nav.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/vendor/slicknav.css">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
 
-<img src="/assets/images/logo.jpg" alt="Logo" >
+<img src="/assets/images/logo.jpg" alt="Logo">
 
-<nav class="nav-collapse">
-    <ul>
-        <li><a href="http://google.com">Home</a></li>
-        <li><a href="http://google.com">About</a></li>
-        <li><a href="http://google.com">Projects</a></li>
-        <li><a href="http://google.com">Blog</a></li>
+<ul id="menu">
+    <li>Parent 1
+        <ul>
+            <li><a href="#">item 3</a></li>
+            <li>Parent 3
+                <ul>
+                    <li><a href="#">item 8</a></li>
+                    <li><a href="#">item 9</a></li>
+                    <li><a href="#">item 10</a></li>
+                </ul>
+            </li>
+            <li><a href="#">item 4</a></li>
+        </ul>
+    </li>
+    <li><a href="#">item 1</a></li>
+    <li>non-link item</li>
+    <li>Parent 2
+        <ul>
+            <li><a href="#">item 5</a></li>
+            <li><a href="#">item 6</a></li>
+            <li><a href="#">item 7</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="/assets/images/slide-2.jpg"/>
+        </li>
+        <li>
+            <img src="/assets/images/slide-1.jpg"/>
+        </li>
+        <li>
+            <img src="/assets/images/slide-2.jpg"/>
+        </li>
     </ul>
-</nav>
+</div>
+
+
+<script src="/assets/js/vendor/jquery.js"></script>
+
+<script src="/assets/js/vendor/jquery.flexslider.js"></script>
+<script src="/assets/js/vendor/jquery.slicknav.js"></script>
+
 
 <script>
-    var navigation = responsiveNav(".nav-collapse", {
-        animate: true,                    // Boolean: Use CSS3 transitions, true or false
-        transition: 284,                  // Integer: Speed of the transition, in milliseconds
-        label: "Menu",                    // String: Label for the navigation toggle
-        insert: "after",                  // String: Insert the toggle before or after the navigation
-        customToggle: "",                 // Selector: Specify the ID of a custom toggle
-        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
-        openPos: "relative",              // String: Position of the opened nav, relative or static
-        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
-        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
-        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
-        init: function(){},               // Function: Init callback
-        open: function(){},               // Function: Open callback
-        close: function(){}               // Function: Close callback
+
+
+    /*    $(window).load(function () {
+
+
+     $('#menu').slicknav({
+     prependTo: '#demo1'
+     });
+
+     });*/
+
+
+
+    $(document).ready(function () {
+
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false
+        });
+
+
+        $('#menu').slicknav();
     });
+
 </script>
 
 </body>
