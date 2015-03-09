@@ -1,0 +1,130 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+
+.donate-button {
+
+    float: right;
+
+    padding: 0.2em 1.2em;
+    text-decoration: none;
+    color: white;
+    background: #C85C19;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    border-radius: 0.5em;
+    border: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    border-radius: 0.3em;
+    padding: 1.2em 1.2em;
+    margin-top: 30px;
+}
+
+/*  main navigation */
+#nav {
+    display: table;
+    padding: 0px;
+}
+
+#nav > li {
+    background: #5e8827;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+    border: 1px #E6FFE6 solid;
+    position: relative;
+    display: table-cell;
+    width: 1%;
+    color: #ccc;
+}
+
+#nav ul li {
+
+    width: 100%;
+    display: block;
+    text-indent: 10px;
+    line-height: 30px;
+    margin-right: 10px;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    border-left: none;
+    border-right: none;
+    background: #5e8827;
+    position: relative;
+}
+
+ul#nav li ul {
+    display: none;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+#nav li:hover > ul {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+
+}
+
+#nav > li ul li ul {
+    left: 100%;
+    white-space: nowrap;
+}
+
+#nav li:hover > a, #nav li:hover {
+    color: #f3901d;
+    background: #E6FFE6;
+}
+
+#nav li, li a {
+    color: white;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* end main navigation */
+
+.slicknav_menu {
+    display: none;
+}
+
+.mobile_buttons {
+    float: right;
+    display: none;
+}
+
+@media screen and (max-width: 40em) {
+    .js #nav {
+        display: none;
+    }
+
+    .donate-button
+    {
+        display: none;
+    }
+
+    .js .slicknav_menu {
+        display: block;
+    }
+
+    .mobile_buttons {
+        display: block;
+    }
+}

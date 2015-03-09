@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fundación Neotrópica - Creciendo como la naturaleza</title>
+    <link rel="icon" type="image/ico" href="/assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+    <link rel="stylesheet" href="/assets/css/vendor/flexslider.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="/assets/css/vendor/slicknav.css">
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+<div id="header" style="    margin: 0px 20px 0px 20px;">
+    <a href="/"><img src="/assets/images/logo.jpg" alt="Logo"></a>
+
+    <div class="mobile_buttons">
+    </div>
+
+    <div class="donate-button">
+        Quiero donar
+    </div>
+
+</div>
+
+<div class="mobile-navigation-container" style="background-color:green;">
+</div>
+
+
+
+<ul id="nav">
+    <li><a href="/">Programas y proyectos </a>
+        <ul>
+            <li><a href="/">Menu 111 </a></li>
+            <li><a href="/">Menu 111 </a></li>
+            <li><a href="/">Menu 111 </a></li>
+
+        </ul>
+
+
+    </li>
+    <li><a href="/">Servicios</a></li>
+    <li><a href="/">Campañas</a></li>
+    <li><a href="/">Galería </a></li>
+    <li><a href="/">Conózcanos </a></li>
+</ul>
+
+
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="/assets/images/slide-2.jpg"/>
+        </li>
+        <li>
+            <img src="/assets/images/slide-1.jpg"/>
+        </li>
+        <li>
+            <img src="/assets/images/slide-2.jpg"/>
+        </li>
+    </ul>
+</div>
+
+
+<script src="/assets/js/vendor/jquery.js"></script>
+
+<script src="/assets/js/vendor/jquery.flexslider.js"></script>
+<script src="/assets/js/vendor/jquery.slicknav.js"></script>
+
+
+<script>
+
+
+    /*    $(window).load(function () {
+
+
+     $('#menu').slicknav({
+     prependTo: '#demo1'
+     });
+
+     });*/
+
+
+    $(document).ready(function () {
+
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false
+        });
+
+
+        $('#nav').slicknav({
+            label: '',
+            prependTo: '.mobile-navigation-container'
+
+        });
+    });
+
+</script>
+
+</body>
+</html>
