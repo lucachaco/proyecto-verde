@@ -5,6 +5,78 @@ body {
     font-size: 100%;
 }
 
+/*  main navigation */
+#nav {
+    display: table;
+    padding: 0px;
+}
+
+#nav > li {
+    background: #01771e;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+    border: 1px #E6FFE6 solid;
+    position: relative;
+    display: table-cell;
+    width: 1%;
+    color: #ccc;
+}
+
+#nav ul li {
+
+    width: 100%;
+    display: block;
+    text-indent: 10px;
+    line-height: 30px;
+    margin-right: 10px;
+    border-top: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    border-left: none;
+    border-right: none;
+    background: #01771e;
+    position: relative;
+}
+
+ul#nav li ul {
+    display: none;
+    padding: 0px;
+}
+
+
+#nav li:hover > ul {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    border: 1px #000 solid;
+    left: 0;
+
+}
+
+#nav > li ul li ul {
+    left: 100%;
+    top: -2px;
+    white-space: nowrap;
+}
+
+#nav li:hover > a, #nav li:hover {
+    color: #f3901d;
+    background: #E6FFE6;
+}
+
+#nav li, li a {
+    color: white;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* end main navigation */
+
 .slicknav_menu {
     display: none;
 }
@@ -13,15 +85,15 @@ body {
     float: right;
     display: none;
 }
+
 @media screen and (max-width: 40em) {
-    .js #menu {
+    .js #nav {
         display: none;
     }
 
     .js .slicknav_menu {
         display: block;
     }
-
 
     .mobile_buttons {
         display: block;

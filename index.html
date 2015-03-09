@@ -12,40 +12,27 @@
 
     <link rel="stylesheet" href="/assets/css/vendor/slicknav.css">
 
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
 <div id="header">
-    <img src="/assets/images/logo.jpg" alt="Logo">
+    <a href="/"><img src="/assets/images/logo.jpg" alt="Logo"></a>
+
     <div class="mobile_buttons">
     </div>
 </div>
 
 <div class="mobile-navigation-container" style="background-color:green;">
 </div>
-<ul id="menu">
-    <li>Parent 1
-        <ul>
-            <li><a href="#">item 3</a></li>
-            <li>Parent 3
-                <ul>
-                    <li><a href="#">item 8</a></li>
-                    <li><a href="#">item 9</a></li>
-                    <li><a href="#">item 10</a></li>
-                </ul>
-            </li>
-            <li><a href="#">item 4</a></li>
-        </ul>
-    </li>
-    <li><a href="#">item 1</a></li>
-    <li>non-link item</li>
-    <li>Parent 2
-        <ul>
-            <li><a href="#">item 5</a></li>
-            <li><a href="#">item 6</a></li>
-            <li><a href="#">item 7</a></li>
-        </ul>
-    </li>
+
+
+
+<ul id="nav">
+    <li><a href="/">Menu 111 </a></li>
+    <li><a href="/">Menu 111 </a></li>
+    <li><a href="/">Menu 111 </a></li>
+    <li><a href="/">Menu 111 </a></li>
 </ul>
 
 
@@ -92,7 +79,7 @@
         });
 
 
-        $('#menu').slicknav({
+        $('#nav').slicknav({
             label: '',
             prependTo: '.mobile-navigation-container'
 
