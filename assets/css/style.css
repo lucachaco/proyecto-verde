@@ -31,8 +31,8 @@ body {
     text-indent: 10px;
     line-height: 30px;
     margin-right: 10px;
-    border-top: 1px #000 solid;
-    border-bottom: 1px #000 solid;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
     border-left: none;
     border-right: none;
     background: #01771e;
@@ -42,21 +42,19 @@ body {
 ul#nav li ul {
     display: none;
     padding: 0px;
+    margin-top: 10px;
 }
-
 
 #nav li:hover > ul {
     display: block;
     position: absolute;
     z-index: 1000;
-    border: 1px #000 solid;
     left: 0;
 
 }
 
 #nav > li ul li ul {
     left: 100%;
-    top: -2px;
     white-space: nowrap;
 }
 
