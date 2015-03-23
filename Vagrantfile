@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision :shell do |shell|
-    shell.path = "conf/bootstrap.sh"
+    shell.path = "_conf/bootstrap.sh"
   end
 
   config.vm.provision :hostmanager
