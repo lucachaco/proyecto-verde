@@ -44,11 +44,15 @@ body {
     cursor: pointer;
     list-style: none;
     padding: 10px 10px 10px 10px;
-    border: 1px #E6FFE6 solid;
+    border-right: 1px #E6FFE6 solid;
     position: relative;
     display: table-cell;
     width: 1%;
     color: #ccc;
+}
+
+#nav > li:last-of-type {
+    border: 0px #E6FFE6 solid;
 }
 
 #nav ul li {
