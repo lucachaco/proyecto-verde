@@ -35,6 +35,7 @@ body {
 #nav {
     display: table;
     padding: 0px;
+    margin-bottom: 0px;
 }
 
 #nav > li {
