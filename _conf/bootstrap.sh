@@ -10,6 +10,9 @@ dpkg-reconfigure locales
 
 apt-get install -y git
 
-apt-get install -y ruby ruby-dev make gcc nodejs
+apt-get install -y ruby ruby-dev make gcc
+
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+apt-get install -y nodejs
 
 gem install jekyll --no-rdoc --no-ri
