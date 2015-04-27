@@ -1,5 +1,3 @@
-
-
 /*  main navigation */
 #nav {
     display: table;
@@ -89,8 +87,7 @@ ul#nav li ul {
         display: none;
     }
 
-    .donate-button
-    {
+    .header-button {
         display: none;
     }
 

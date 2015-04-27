@@ -1,5 +1,33 @@
+h1,
+h2,
 h3 {
+  margin: 0;
+}
+a {
   color: #5e8827;
+}
+a:hover {
+  color: #5e8827;
+}
+h2 {
+  color: #5e8827;
+  font-size: 20px;
+}
+.header-button {
+  float: right;
+  padding: 12px 12px;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.article {
+  position: relative;
+}
+.article .meta-data {
+  margin-bottom: 5px;
+}
+.article span {
+  color: #9a9a9a;
 }
 /*@base: #f938ab;
 
