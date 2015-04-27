@@ -6,30 +6,7 @@ body {
 }
 
 
-.donate-button {
 
-    float: right;
-
-    padding: 0.2em 1.2em;
-    text-decoration: none;
-    color: white;
-    background: #C85C19;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
-    border-radius: 0.5em;
-    border: 0;
-    font-weight: 600;
-    text-transform: uppercase;
-    -webkit-border-radius: 0.3em;
-    -moz-border-radius: 0.3em;
-    -ms-border-radius: 0.3em;
-    -o-border-radius: 0.3em;
-    border-radius: 0.3em;
-    padding: 1.2em 1.2em;
-    margin-top: 30px;
-}
 
 /*  main navigation */
 #nav {
