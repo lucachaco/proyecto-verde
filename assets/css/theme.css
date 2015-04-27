@@ -20,10 +20,17 @@ h2 {
   margin-left: 5px;
   margin-top: 20px;
 }
-.article {
-  position: relative;
+.article figure {
+  float: left;
+  margin-right: 10px;
+  clear: both;
+}
+.article section {
+  overflow: auto;
+  display: block;
 }
 .article .meta-data {
+  margin-top: 2px;
   margin-bottom: 5px;
 }
 .article span {
