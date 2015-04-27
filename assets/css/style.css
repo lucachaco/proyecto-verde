@@ -87,7 +87,7 @@ ul#nav li ul {
         display: none;
     }
 
-    .header-button {
+    .header-button, .emailer {
         display: none;
     }
 
