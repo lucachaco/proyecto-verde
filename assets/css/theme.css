@@ -1,3 +1,6 @@
+h3 {
+  color: #5e8827;
+}
 /*@base: #f938ab;
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
@@ -17,7 +20,7 @@
   }
 }*/
 /*.btn-action {
-  background: #c85c19;
+  background: @action-color;
 }*/
 /*
 .donate-button {

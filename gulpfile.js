@@ -12,7 +12,7 @@ gulp.task('bootstrap', function () {
 });
 
 gulp.task('less', function () {
-    return gulp.src('./assets/less/**/*.less')
+    return gulp.src('./assets/less/theme.less')
         .pipe(less({
             paths: [ path.join(__dirname, 'less', 'includes') ]
         }))
