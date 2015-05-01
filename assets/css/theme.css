@@ -28,6 +28,7 @@ h2 {
 .article section {
   overflow: auto;
   display: block;
+  min-height: 120px;
 }
 .article .meta-data {
   margin-top: 2px;
