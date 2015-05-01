@@ -82,21 +82,18 @@ ul#nav li ul {
     display: none;
 }
 
-@media screen and (max-width: 40em) {
-    .js #nav {
-        display: none;
+
+@media(max-width:767px){
+
+    .feature-article figure{
+        float: left;
+        margin-right: 10px;
+        clear: both;
     }
 
-    .header-button, .emailer {
-        display: none;
-    }
 
-    .js .slicknav_menu {
-        display: block;
-    }
-
-    .mobile_buttons {
-        display: block;
+    .feature-article figure a img {
+        width: 140px;
     }
 }
 
