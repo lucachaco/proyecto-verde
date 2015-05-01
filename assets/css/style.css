@@ -82,6 +82,24 @@ ul#nav li ul {
     display: none;
 }
 
+@media screen and (max-width: 40em) {
+    .js #nav {
+        display: none;
+    }
+
+    .header-button, .emailer {
+        display: none;
+    }
+
+    .js .slicknav_menu {
+        display: block;
+    }
+
+    .mobile_buttons {
+        display: block;
+    }
+}
+
 
 @media(max-width:767px){
 
