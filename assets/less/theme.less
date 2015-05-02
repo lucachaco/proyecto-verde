@@ -1,4 +1,7 @@
 @import "variables.less";
+.menu-container {
+  background: @main-color;
+}
 
 #nav {
   display: table;
@@ -14,14 +17,14 @@
     position: relative;
     display: table-cell;
     width: 1%;
-    color: #cccccc;
+    color: @white;
     ul li ul {
       left: 100%;
       white-space: nowrap;
     }
   }
   > li:last-of-type {
-    border: 0px #e6ffe6 solid;
+    border: 0px @white solid;
   }
   ul li {
     width: 100%;
@@ -29,17 +32,18 @@
     text-indent: 10px;
     line-height: 30px;
     margin-right: 10px;
-    border-top: 1px white solid;
-    border-bottom: 1px white solid;
+    border-top: 1px @white solid;
+    border-bottom: 1px @white solid;
     border-left: none;
     border-right: none;
     background: @main-color;
     position: relative;
   }
   li:hover {
+    background: @main-color-lighter;
     > a, {
-      color: #f3901d;
-      background: #e6ffe6;
+      color: white;
+      text-decoration: none;
     }
     > ul {
       display: block;
@@ -57,7 +61,7 @@ ul#nav li ul {
 }
 
 #nav li, li a {
-  color: white;
+  color: @white;
   text-decoration: none;
 }
 
