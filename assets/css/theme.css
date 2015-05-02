@@ -53,7 +53,7 @@ ul#nav li ul {
 #nav li {
   color: white;
 }
-li a {
+#nav > li a {
   color: white;
   text-decoration: none;
   display: inline-block;
@@ -85,6 +85,10 @@ li a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.flex-direction-nav a {
+  height: 50px;
+  background: white;
 }
 h1,
 h2,
