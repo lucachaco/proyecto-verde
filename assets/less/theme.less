@@ -12,7 +12,6 @@
     text-align: center;
     cursor: pointer;
     list-style: none;
-    padding: 10px 10px 10px 10px;
     border-right: 1px #e6ffe6 solid;
     position: relative;
     display: table-cell;
@@ -29,11 +28,7 @@
   ul li {
     width: 100%;
     display: block;
-    text-indent: 10px;
-    line-height: 30px;
-    margin-right: 10px;
     border-top: 1px @white solid;
-    border-bottom: 1px @white solid;
     border-left: none;
     border-right: none;
     background: @main-color;
@@ -57,12 +52,18 @@
 ul#nav li ul {
   display: none;
   padding: 0px;
-  margin-top: 10px;
+}
+#nav li{
+  color: @white;
 }
 
-#nav li, li a {
+li a {
   color: @white;
   text-decoration: none;
+  display:inline-block;
+  width: 100%;
+  padding: 8px 5px 8px 5px;
+  font-size: 16px;
 }
 
 * {
