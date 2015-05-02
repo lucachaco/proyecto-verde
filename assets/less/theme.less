@@ -1,5 +1,96 @@
 @import "variables.less";
 
+#nav {
+  display: table;
+  padding: 0px;
+  margin-bottom: 0px;
+  > li {
+    background: #5e8827;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+    border-right: 1px #e6ffe6 solid;
+    position: relative;
+    display: table-cell;
+    width: 1%;
+    color: #cccccc;
+    ul li ul {
+      left: 100%;
+      white-space: nowrap;
+    }
+  }
+  > li:last-of-type {
+    border: 0px #e6ffe6 solid;
+  }
+  ul li {
+    width: 100%;
+    display: block;
+    text-indent: 10px;
+    line-height: 30px;
+    margin-right: 10px;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    border-left: none;
+    border-right: none;
+    background: #5e8827;
+    position: relative;
+  }
+  li:hover {
+    > a, {
+      color: #f3901d;
+      background: #e6ffe6;
+    }
+    > ul {
+      display: block;
+      position: absolute;
+      z-index: 1000;
+      left: 0;
+    }
+  }
+}
+
+ul#nav li ul {
+  display: none;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+#nav li, li a {
+  color: white;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+.mobile_buttons {
+  float: right;
+  display: none;
+}
+
+.flexslider {
+  margin-bottom: 20px;
+  .slides > li {
+    max-height: 500px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .slides img {
+    max-width: 1500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------
 h1, h2, h3 {
   margin: 0;
 }
@@ -30,7 +121,7 @@ h2 {
     float: left;
     margin-right: 10px;
     clear: both;
-    img{
+    img {
       width: 140px;
     }
   }
@@ -123,3 +214,35 @@ h2 {
   padding: 1.2em 1.2em;
   margin-top: 30px;
 }*/
+
+@media screen and (max-width: 40em) {
+  .js #nav {
+    display: none;
+  }
+
+  .header-button, .emailer {
+    display: none;
+  }
+
+  .js .slicknav_menu {
+    display: block;
+  }
+
+  .mobile_buttons {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .feature-article figure {
+    float: left;
+    margin-right: 10px;
+    clear: both;
+  }
+
+  .feature-article figure a img {
+    width: 140px;
+  }
+
+}
