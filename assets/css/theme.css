@@ -88,7 +88,9 @@ ul#nav li ul {
 }
 .flex-direction-nav a {
   height: 50px;
-  background: white;
+}
+.flex-direction-nav a:before {
+  color: #00bc26;
 }
 h1,
 h2,
