@@ -4,7 +4,7 @@
   margin-bottom: 0px;
 }
 #nav > li {
-  background: #007c1e;
+  background: #00841b;
   text-align: center;
   cursor: pointer;
   list-style: none;
@@ -32,7 +32,7 @@
   border-bottom: 1px white solid;
   border-left: none;
   border-right: none;
-  background: #007c1e;
+  background: #00841b;
   position: relative;
 }
 #nav li:hover > a {
@@ -86,13 +86,13 @@ h3 {
   margin: 0;
 }
 a {
-  color: #007c1e;
+  color: #00841b;
 }
 a:hover {
-  color: #007c1e;
+  color: #00841b;
 }
 h2 {
-  color: #007c1e;
+  color: #00841b;
   font-size: 20px;
 }
 .header-button {
