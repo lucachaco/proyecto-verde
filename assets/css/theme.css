@@ -49,8 +49,12 @@ h2 {
   min-height: 120px;
 }
 .feature-article .meta-data {
+  display: none;
   margin-top: 2px;
   margin-bottom: 5px;
+}
+.feature-article p {
+  display: none;
 }
 .feature-article span {
   color: #9a9a9a;
