@@ -149,52 +149,26 @@ h2 {
 .feature-article span {
   color: #9a9a9a;
 }
-/*@base: #f938ab;
-
-.box-shadow(@style, @c) when (iscolor(@c)) {
-  -webkit-box-shadow: @style @c;
-  box-shadow: @style @c;
-}
-
-.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
-  .box-shadow(@style, rgba(0, 0, 0, @alpha));
-}
-
-.box {
-  color: saturate(@base, 5%);
-  border-color: lighten(@base, 30%);
-  div {
-    .box-shadow(0 0 5px, 30%)
-  }
-}*/
-/*.btn-action {
-  background: @action-color;
-}*/
-/*
-.donate-button {
-
-  float: right;
-
-  padding: 0.2em 1.2em;
-  text-decoration: none;
-  color: white;
-  background: #C85C19;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
-  border-radius: 0.5em;
-  border: 0;
+.mission {
+  font-size: 28px;
+  color: #c85c19;
   font-weight: 600;
-  text-transform: uppercase;
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  -ms-border-radius: 0.3em;
-  -o-border-radius: 0.3em;
-  border-radius: 0.3em;
-  padding: 1.2em 1.2em;
-  margin-top: 30px;
-}*/
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .feature-article figure {
+    float: left;
+    margin-right: 10px;
+    clear: both;
+  }
+  .feature-article figure a img {
+    width: 140px;
+  }
+  .mission {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 40em) {
   .js #nav {
     display: none;
@@ -209,14 +183,7 @@ h2 {
   .mobile_buttons {
     display: block;
   }
-}
-@media (max-width: 767px) {
-  .feature-article figure {
-    float: left;
-    margin-right: 10px;
-    clear: both;
-  }
-  .feature-article figure a img {
-    width: 140px;
+  .mission {
+    font-size: 18px;
   }
 }
