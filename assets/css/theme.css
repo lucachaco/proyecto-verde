@@ -142,12 +142,17 @@ h2 {
   display: block;
   min-height: 120px;
 }
-.feature-article .meta-data {
-  margin-top: 2px;
-  margin-bottom: 5px;
+.block-header {
+  border-bottom: 1px dashed #808080;
+  margin-bottom: 10px;
 }
-.feature-article span {
-  color: #9a9a9a;
+.block-header div {
+  background-color: #c85c19;
+  height: 10px;
+}
+.block-header h3 {
+  margin: 10px 0 10px 0;
+  color: #c85c19;
 }
 .mission {
   font-size: 28px;

@@ -164,22 +164,25 @@ h2 {
       width: 100%;
     }
   }
-
   section {
     overflow: auto;
     display: block;
     min-height: 120px;
   }
+}
 
-  .meta-data {
-    margin-top: 2px;
-    margin-bottom: 5px;
+.block-header {
+  border-bottom: 1px dashed @grey-dark;
+  margin-bottom: 10px;
+  div {
+    background-color: #c85c19;
+    height: 10px;
   }
 
-  span {
-    color: @grey-text;
+  h3 {
+    margin: 10px 0 10px 0;
+    color: #c85c19;
   }
-
 }
 
 .mission {
@@ -189,7 +192,6 @@ h2 {
   margin-bottom: 20px;
   text-align: center;
 }
-
 
 @media (max-width: 767px) {
 
@@ -208,8 +210,6 @@ h2 {
   }
 
 }
-
-
 
 @media screen and (max-width: 40em) {
   .js #nav {
