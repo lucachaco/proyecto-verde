@@ -1,0 +1,100 @@
+
+<div>
+    <div class="container">
+
+        <div class="row">
+            <div class=" col-sm-9 ">
+                <div class=" col-sm-3 ">
+                    <ul class="list-unstyled">
+                        <li style="color:  #5e8827">Conózcanos</li>
+                        <li>Misión y visión</li>
+                        <li>Historia</li>
+                        <li>Equipo</li>
+                        <li>Memoria institucional</li>
+                        <li>Premios</li>
+                    </ul>
+                </div>
+
+                <div class=" col-sm-3 ">
+                    <ul class="list-unstyled">
+                        <li style="color:  #5e8827">Colabore</li>
+                        <li>Done</li>
+                        <li>Afíliese</li>
+                        <li>Voluntariado</li>
+                        <li>Trabaje con nosotros</li>
+                        <li>Política de rechazo</li>
+
+                    </ul>
+                </div>
+
+                <div class=" col-sm-3 ">
+                    <ul class="list-unstyled">
+                        <li style="color:  #5e8827">Contacto</li>
+                        <li>Formulario de contacto</li>
+                        <li>Directorio</li>
+                    </ul>
+                </div>
+
+                <div class=" col-sm-3 ">
+                    <ul class="list-unstyled">
+                        <li style="color:  #5e8827">Más</li>
+                        <li>FAQ</li>
+                        <li>Mapa del sitio</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class=" col-sm-3 " style="">
+
+                <a href="/"><img src="/assets/images/logo.jpg" alt="Logo" style=" max-height: 70px;"></a>
+
+                <div>
+                    Curridabat, San José, Costa Rica<br>
+                    (506) 2253-2130<br>
+                    <a href="mailto:info@neotropica.org?Subject=Hola" target="_top">info@neotropica.org</a>
+                    <br>
+
+                    <div style="color: #5e8827; font-size: 30px;">
+                        <a href="https://www.facebook.com/Neotropica" target="_blank"><i
+                                class="fa fa-facebook-official"></i></a>
+                        <a href="http://www.youtube.com/user/FundacionNeotropica" target="_blank"><i
+                                class="fa fa-youtube"></i></a>
+                        <a href="https://twitter.com/fundneotropica" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/fundneotropica" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<script src="/assets/js/vendor/jquery.js"></script>
+
+<script src="/assets/js/vendor/jquery.flexslider.js"></script>
+<script src="/assets/js/vendor/jquery.slicknav.js"></script>
+<script>
+    /*    $(window).load(function () {
+     $('#menu').slicknav({
+     prependTo: '#demo1'
+     });
+     });*/
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false
+        });
+
+
+        $('#nav').slicknav({
+            label: '',
+            prependTo: '.mobile-navigation-container'
+
+        });
+    });
+
+</script>
