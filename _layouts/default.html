@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fundación Neotrópica - Creciendo como la naturaleza</title>
+    <link rel="icon" type="image/ico" href="/assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="/assets/css/vendor/flexslider.css">
+    <link rel="stylesheet" href="/assets/css/vendor/custom-bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/theme.css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/vendor/slicknav.css">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="header">
+            <a href="/"><img class="logo" src="/assets/images/logo.jpg" alt="Logo"></a>
+
+            <div class="header-content">
+                <button type="button" class="btn btn-action header-button">Quiero donar</button>
+
+                <button type="button" class="btn btn-primary header-button">Tienda en línea</button>
+            </div>
+
+            <div class="mobile_buttons">
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="menu-container">
+    <div class="container">
+        <div class="row">
+
+            <ul id="nav">
+                <li><a href="/">Programas y proyectos </a>
+                    <ul>
+                        <li><a href="/">Oportunidades educativass </a></li>
+                        <li><a href="/">Mensaje muy largo de menu </a></li>
+                        <li><a href="/">Otro mensaje largo </a></li>
+                    </ul>
+                </li>
+                <li><a href="/">Servicios</a></li>
+                <li><a href="/">Campañas</a></li>
+                <li><a href="/">Galería </a></li>
+                <li><a href="/">Conózcanos </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-navigation-container">
+</div>
+
+
+
+<div>
+    <div class="container">
+
+        <div class="row">
+            <div class=" col-sm-9 ">
+                <div class=" col-sm-3 ">
+                    <ul class="list-unstyled">
+                        <li style="color:  #5e8827">Conózcanos</li>
+                        <li>Misión y visión</li>
+                        <li>Historia</li>
+                        <li>Equipo</li>
+                        <li>Memoria institucional</li>
+                        <li>Premios</li>
+                    </ul>
+                </div>
+
+                <div class=" col-sm-3 ">
+                    <ul class="list-unstyled">
+                        <li style="color:  #5e8827">Colabore</li>
+                        <li>Done</li>
+                        <li>Afíliese</li>
+                        <li>Voluntariado</li>
+                        <li>Trabaje con nosotros</li>
+                        <li>Política de rechazo</li>
+
+                    </ul>
+                </div>
+
+                <div class=" col-sm-3 ">
+                    <ul class="list-unstyled">
+                        <li style="color:  #5e8827">Contacto</li>
+                        <li>Formulario de contacto</li>
+                        <li>Directorio</li>
+                    </ul>
+                </div>
+
+                <div class=" col-sm-3 ">
+                    <ul class="list-unstyled">
+                        <li style="color:  #5e8827">Más</li>
+                        <li>FAQ</li>
+                        <li>Mapa del sitio</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class=" col-sm-3 " style="">
+
+                <a href="/"><img src="/assets/images/logo.jpg" alt="Logo" style=" max-height: 70px;"></a>
+
+                <div>
+                    Curridabat, San José, Costa Rica<br>
+                    (506) 2253-2130<br>
+                    <a href="mailto:info@neotropica.org?Subject=Hola" target="_top">info@neotropica.org</a>
+                    <br>
+
+                    <div style="color: #5e8827; font-size: 30px;">
+                        <a href="https://www.facebook.com/Neotropica" target="_blank"><i
+                                class="fa fa-facebook-official"></i></a>
+                        <a href="http://www.youtube.com/user/FundacionNeotropica" target="_blank"><i
+                                class="fa fa-youtube"></i></a>
+                        <a href="https://twitter.com/fundneotropica" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/fundneotropica" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<script src="/assets/js/vendor/jquery.js"></script>
+
+<script src="/assets/js/vendor/jquery.flexslider.js"></script>
+<script src="/assets/js/vendor/jquery.slicknav.js"></script>
+<script>
+    /*    $(window).load(function () {
+     $('#menu').slicknav({
+     prependTo: '#demo1'
+     });
+     });*/
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false
+        });
+
+
+        $('#nav').slicknav({
+            label: '',
+            prependTo: '.mobile-navigation-container'
+
+        });
+    });
+
+</script>
+
+</body>
+</html>
