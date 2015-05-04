@@ -160,6 +160,26 @@ h2 {
 .article span {
   color: #9a9a9a;
 }
+.article-body figure {
+  float: left;
+  margin-right: 10px;
+  clear: both;
+}
+.article-body figure img {
+  width: 140px;
+}
+.article-body section {
+  overflow: auto;
+  display: block;
+  min-height: 120px;
+}
+.article-body .meta-data {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+.article-body span {
+  color: #9a9a9a;
+}
 .feature-article figure img {
   width: 100%;
 }
